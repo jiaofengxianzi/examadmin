@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cmn-Hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>考试管理系统</title>
+
+    <style>
+        #browserTips{ display: none; position: absolute; left: 50%; top: 50%; margin-left: -320px; margin-top: -140px; width: 640px; height: 70px; font-family: "微软雅黑"; font-size: 15px; }
+        #browserTips p{ text-indent: 28px; }
+        #browserTips a{ color: blue; }
+    </style>
+</head>
+<body>
+
+<div id="browserTips">
+    温馨提示：
+    <p>该系统暂不支持IE浏览器，为了您更好的使用平台，建议使用<a href="https://www.baidu.com/s?wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8&tn=98012088_5_dg&ch=11">谷歌浏览器</a>或360极速模式</p>
+</div>
+
+<div id="app"></div>
+<!-- built files will be auto injected -->
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/layer/layer.js"></script>
+<script src="/static/js/ckeditor/ckeditor.js"></script>
+<script>
+    if(navigator.userAgent.indexOf('Trident') > -1){
+        $('#browserTips').show();
+    }
+</script>
+
+<script>
+     window.api_host = "http://admin.juhezaixian.cn/api/v1"
+</script>
+
+</body>
+</html>
+
+
